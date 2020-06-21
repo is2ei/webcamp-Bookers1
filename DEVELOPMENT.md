@@ -16,6 +16,12 @@ $ rails dbconsole
 $ rails db:migrate
 ```
 
+## Lint
+
+```shell
+$ bundle exec rubocop
+```
+
 ## Test
 
 ```shell
