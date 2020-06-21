@@ -1,18 +1,17 @@
 <h1>Editing Book</h1>
 
-<p>successfully</p>
-<p>error</p>
-
-<%= form_with model: @book, url: book_path do |f| %>
-    <div>
+<%= form_with model: @book, url: book_path, class: "edit_book" do |f| %>
+    <div class="field">
         <%= f.label :title, 'Title' %>
         <%= f.text_field :title %>
     </div>
-    <div>
+    <div class="field">
         <%= f.label :body, 'Body' %>
-        <%= f.text_field :body %>
+        <%= f.text_area :body %>
     </div>
-    <%= submit_tag('Update Book') %>
+    <div class="actions">
+        <%= submit_tag('Update Book') %>
+    </div>
 <% end %>
 
 <%= link_to 'Show', book_path(@book.id) %>
