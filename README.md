@@ -1,6 +1,7 @@
 # webcamp-Bookers1
 
 ![RuboCop](https://github.com/is2ei/webcamp-Bookers1/workflows/RuboCop/badge.svg)
+![RSpec](https://github.com/is2ei/webcamp-Bookers1/workflows/RSpec/badge.svg)
 
 Bookers1 の課題です。
 
