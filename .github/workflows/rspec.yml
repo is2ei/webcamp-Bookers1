@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install sqlite3
-      run: apt-get install libsqlite3-dev
+      run: sudo apt-get install libsqlite3-dev
     - name: Set up Ruby 2.7
       uses: ruby/setup-ruby@v1
       with:
