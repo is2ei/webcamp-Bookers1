@@ -33,13 +33,15 @@
             </uL>
         </div>
     <% end %>
-    <div>
+    <div class="field">
         <%= f.label :title, 'Title' %>
         <%= f.text_field :title %>
     </div>
-    <div>
+    <div class="field">
         <%= f.label :body, 'Body' %>
         <%= f.text_field :body %>
     </div>
-    <%= submit_tag('Create Book') %>
+    <div class="actions">
+        <%= submit_tag('Create Book') %>
+    </div>
 <% end %>
