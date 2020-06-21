@@ -1,24 +1,21 @@
-# README
+# webcamp-Bookers1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bookers1 の課題です。
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+```shell
+$ bundle install
+```
 
-* System dependencies
+## Usage
 
-* Configuration
+1) Start dev server
 
-* Database creation
+```shell
+$ rails s -b 0.0.0.0
+```
 
-* Database initialization
+2) Access to index page
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+http://localhost:3000
