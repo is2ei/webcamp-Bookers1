@@ -4,6 +4,18 @@
 $ rails s -b 0.0.0.0
 ```
 
+## Access to DB
+
+```shell
+$ rails dbconsole
+```
+
+## Migration
+
+```shell
+$ rails db:migrate
+```
+
 ## Test
 
 ```shell
