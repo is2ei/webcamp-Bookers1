@@ -1,5 +1,6 @@
-class BooksController < ApplicationController
+# frozen_string_literal: true
 
+class BooksController < ApplicationController # :nodoc:
   def index
     @books = Book.all
     @book = Book.new
@@ -7,7 +8,7 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
-    if @book.save then
+    if @book.save
       redirect_to book_path(@book.id)
     else
       @books = Book.all
@@ -15,8 +16,7 @@ class BooksController < ApplicationController
     end
   end
 
-  def new
-  end
+  def new; end
 
   def edit
     @book = Book.find(params[:id])
@@ -35,6 +35,7 @@ class BooksController < ApplicationController
     book.destroy
     redirect_to books_path
   end
+
   private
 
   def book_params

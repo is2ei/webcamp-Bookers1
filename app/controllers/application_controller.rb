@@ -1,4 +1,5 @@
-class ApplicationController < ActionController::Base
-  def index
-  end
+# frozen_string_literal: true
+
+class ApplicationController < ActionController::Base # :nodoc:
+  def index; end
 end

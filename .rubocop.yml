@@ -861,7 +861,7 @@ Layout/LeadingEmptyLines:
 Layout/LineLength:
   Description: 'Checks that line length does not exceed the configured limit.'
   StyleGuide: '#max-line-length'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.25'
   VersionChanged: '0.84'
   AutoCorrect: false
@@ -1611,9 +1611,7 @@ Lint/RaiseException:
   Description: Checks for `raise` or `fail` statements which are raising `Exception` class.
   StyleGuide: '#raise-exception'
   Enabled: pending
-  Safe: false
   VersionAdded: '0.81'
-  VersionChanged: '0.86'
   AllowedImplicitNamespaces:
     - 'Gem'
 
@@ -1670,7 +1668,6 @@ Lint/RegexpAsCondition:
                  The regexp literal matches `$_` implicitly.
   Enabled: true
   VersionAdded: '0.51'
-  VersionChanged: '0.86'
 
 Lint/RequireParentheses:
   Description: >-
@@ -1881,7 +1878,7 @@ Metrics/AbcSize:
   Reference:
     - http://c2.com/cgi/wiki?AbcMetric
     - https://en.wikipedia.org/wiki/ABC_Software_Metric
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.27'
   VersionChanged: '0.81'
   # The ABC size is a calculated magnitude, so this number can be an Integer or
@@ -1891,7 +1888,7 @@ Metrics/AbcSize:
 
 Metrics/BlockLength:
   Description: 'Avoid long blocks with many lines.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.44'
   VersionChanged: '0.66'
   CountComments: false  # count full line comments?
@@ -1924,7 +1921,7 @@ Metrics/CyclomaticComplexity:
   Description: >-
                  A complexity metric that is strongly correlated to the number
                  of test cases needed to validate a method.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.25'
   VersionChanged: '0.81'
   IgnoredMethods: []
@@ -1933,7 +1930,7 @@ Metrics/CyclomaticComplexity:
 Metrics/MethodLength:
   Description: 'Avoid methods longer than 10 lines of code.'
   StyleGuide: '#short-methods'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.25'
   VersionChanged: '0.59.2'
   CountComments: false  # count full line comments?
@@ -1959,7 +1956,7 @@ Metrics/PerceivedComplexity:
   Description: >-
                  A complexity metric geared towards measuring complexity for a
                  human reader.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.25'
   VersionChanged: '0.81'
   IgnoredMethods: []
@@ -2313,7 +2310,7 @@ Style/ArrayJoin:
 Style/AsciiComments:
   Description: 'Use only ascii symbols in comments.'
   StyleGuide: '#english-comments'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.9'
   VersionChanged: '0.52'
   AllowedChars: []
@@ -2977,7 +2974,7 @@ Style/IfUnlessModifier:
                  Favor modifier if/unless usage when you have a
                  single-line body.
   StyleGuide: '#if-as-a-modifier'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.9'
   VersionChanged: '0.30'
 
@@ -3242,7 +3239,6 @@ Style/MultilineTernaryOperator:
   StyleGuide: '#no-multiline-ternary'
   Enabled: true
   VersionAdded: '0.9'
-  VersionChanged: '0.86'
 
 Style/MultilineWhenThen:
   Description: 'Do not use then for multi-line when statement.'
@@ -3347,7 +3343,6 @@ Style/NestedTernaryOperator:
   StyleGuide: '#no-nested-ternary'
   Enabled: true
   VersionAdded: '0.9'
-  VersionChanged: '0.86'
 
 Style/Next:
   Description: 'Use `next` to skip iteration instead of a condition at the end.'
@@ -3880,7 +3875,6 @@ Style/StructInheritance:
   StyleGuide: '#no-extend-struct-new'
   Enabled: true
   VersionAdded: '0.29'
-  VersionChanged: '0.86'
 
 Style/SymbolArray:
   Description: 'Use %i or %I for arrays of symbols.'
