@@ -10,7 +10,7 @@ class BooksController < ApplicationController # :nodoc:
     @book = Book.new(book_params)
     if @book.save
       redirect_to book_path(@book.id),
-        notice: 'Book was successfully created.'
+                  notice: 'Book was successfully created.'
     else
       @books = Book.all
       render :index
@@ -35,7 +35,7 @@ class BooksController < ApplicationController # :nodoc:
     book = Book.find(params[:id])
     book.destroy
     redirect_to books_path,
-      notice: 'Book was successfully destroyed.'
+                notice: 'Book was successfully destroyed.'
   end
 
   private
