@@ -28,7 +28,13 @@ class BooksController < ApplicationController # :nodoc:
   end
 
   def update
-    redirect_to book_path(params[:id])
+    @book = Book.find(params[:id])
+    if @book.update(book_params)
+      redirect_to book_path(params[:id]),
+                  notice: 'Book was successfully updated.'
+    else
+      render :edit
+    end
   end
 
   def destroy
